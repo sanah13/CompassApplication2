@@ -1,11 +1,14 @@
 package uk.ac.solent.compassapplication
 
+import android.content.Intent
 import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.animation.Animation
 import android.view.animation.RotateAnimation
 import android.widget.ImageView
@@ -91,5 +94,25 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.menu, menu)
+        return true
+    }
+    override fun onOptionsItemSelected(item: MenuItem):Boolean {
+        when (item?.itemId) {
+            R.id. -> {
+                var clickintent = Intent(this, GalleryActivity::class.java)
+                startActivity(clickintent)
+            }
+            R.id. -> {
+                var clickintent = Intent(this, GalleryActivity::class.java)
+                startActivity(clickintent)
+            }
+            else ->
+                super.onOptionsItemSelected(item)
+        }
+        return true;
+    }
+}
 }
