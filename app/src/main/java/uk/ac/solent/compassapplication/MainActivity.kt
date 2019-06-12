@@ -85,7 +85,6 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-
         fun lowPass(input: FloatArray, output: FloatArray) {
             val alpha = 0.05f
 
@@ -101,12 +100,8 @@ class MainActivity : AppCompatActivity() {
     }
     override fun onOptionsItemSelected(item: MenuItem):Boolean {
         when (item?.itemId) {
-            R.id. -> {
-                var clickintent = Intent(this, GalleryActivity::class.java)
-                startActivity(clickintent)
-            }
-            R.id. -> {
-                var clickintent = Intent(this, GalleryActivity::class.java)
+            R.id.Settings -> {
+                var clickintent = Intent(this, Settings::class.java)
                 startActivity(clickintent)
             }
             else ->
