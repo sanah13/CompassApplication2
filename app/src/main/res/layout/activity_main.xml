@@ -19,5 +19,29 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:src="@drawable/compass"/>
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Pitch"
+        app:layout_constraintTop_toBottomOf="@+id/img1"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="azimuth"
+        app:layout_constraintTop_toBottomOf="@+id/tv2"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="roll"
+        app:layout_constraintTop_toBottomOf="@+id/tv3"
+        app:layout_constraintLeft_toLeftOf="parent"/>
 
     </android.support.constraint.ConstraintLayout>
